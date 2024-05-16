@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">Decentralised Social Media</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- Add any navigation links here -->
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle wallet-address" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span id="partialAddress"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div id="fullAddress" class="dropdown-item"></div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" id="disconnectButton" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Disconnect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="bg-primary text-white text-center py-4">
+        <h1>User Profile</h1>
+    </header>
+    <main class="container mt-4">
+        <section class="text-center">
+            <div class="profile-info">
+                <!-- Display connected wallet username and post count -->
+                <h2>Welcome <span id="username" class="font-weight-bold"></span></h2>
+                <p>No. of Posts: <span id="postCount"></span></p>
+            </div>
+            <div class="profile-picture">
+                <!-- Display profile picture -->
+                <div class="profile-icon rounded-circle bg-secondary text-center text-white">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <div class="mt-3">
+                <!-- Display connected wallet full address -->
+                <p class="small" id="fullAddress"></p>
+            </div>
+        </section>
+        <hr>
+        <section class="user-posts">
+            <h2 class="text-center mb-4">Posts</h2>
+            <div id="postContainer">
+                <!-- Display user's posts here -->
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <!-- Your footer content -->
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--web3 cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Your custom JavaScript -->
+    <script src="authorprofile.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Decentralized Social Network</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="signup.css"> <!-- Link to external CSS file for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="connectWallet">Connect Wallet:</label>
+                <button type="button" id="connectWallet">Connect</button>
+            </div>
+            <div class="form-group">
+                <label for="username">Choose Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+                <span class="username-feedback"></span> <!-- Feedback for username availability -->
+            </div>
+            <div class="form-group">
+                <label for="walletAddress">Connected Wallet:</label>
+                <span id="walletAddress"></span> <!-- Display wallet address here -->
+            </div>
+            <button type="submit" id="signupButton">Sign Up</button>
+        </form>
+    </div>
+    <script src="signup.js"></script> <!-- Include JavaScript file for functionality -->
+</body>
+</html>
